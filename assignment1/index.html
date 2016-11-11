@@ -4,10 +4,10 @@
 <head>
   <title>Lunch Checker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <script src="angular.min.js"></script>
   <script src="app.js"></script>
-  
+
   <link rel="stylesheet" href="styles/bootstrap.min.css">
   <style>
     .message {
@@ -23,18 +23,19 @@
     <h1>Lunch Checker</h1>
 
     <div class="form-group">
-      <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control" ng-model="dishes">
+      <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control"
+        ng-model="dishes">
     </div>
     <div class="form-group">
       <button class="btn btn-default" ng-click="commentOnLunch();">Check If Too Much</button>
     </div>
-    <div class="form-group message">
+    <div class="form-group message" ng-cloak>
       {{lunchMessage}}
     </div>
   </div>
 
 
-  
+
 </body>
 
 </html>
