@@ -1,0 +1,6 @@
+<ul>
+  <li ng-repeat="item in items">
+    <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+     <span style="font-weight:bold">{{item.name}}</span> ( {{item.short_name}} ) {{item.description}}
+  </li>
+</ul>
